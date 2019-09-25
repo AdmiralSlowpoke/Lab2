@@ -4,6 +4,48 @@
 		<title>Золотухин Максим ЕТ-313</title>
 	</head>
 	<body>
-		
+		<script>
+			function src1(){
+			let a=prompt("В каком году появилась спецификация html5?", "");
+			if(a>2000)
+			{
+				alert("21 век");
+			}
+			else if(a>1900)
+			{
+				alert("20 век");
+			}
+			else if(a>1800)
+			{
+				alert("19 век");
+			}
+			else if(a>1800)
+			{
+				alert("18 век");
+			}
+			else if(a>1700)
+			{
+				alert("17 век");
+			}
+			else
+			{
+				alert("Век науке не известен");
+			}
+			}
+			function src2(){
+				let a=prompt("Введите свою должность"," ");
+				let b=prompt("Введите своё ФИО", " ");
+				if(a!="Секретарь"&&a!="секретарь"){
+					alert("Здраствуйте, господин начальник")
+				}
+				else{
+					alert("Добрый день "+b);
+				}
+			}
+		</script>
+		<p>Второй вариант</p>
+		<input type="button" id="btn1" value="Запуск первого скрипта" onclick="src1()">
+		<br>
+		<input type="button" id="btn2" value="Запуск второго скрипта" onclick="src2()">	
 	</body>
 </html>
