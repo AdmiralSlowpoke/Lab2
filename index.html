@@ -33,9 +33,21 @@
 			}
 			}
 			function src2(){
+				let a=prompt("Введите а","");
+				let b=prompt("Введите b","");
+				if(a===b){
+					alert("Значения равны");
+				}
+				else
+				{
+					alert("Значения не равны");
+				}
+				a===b?alert("Значения равны"):alert("Значения не равны");
+			}
+			function src3(){
 				let a=prompt("Введите свою должность"," ");
 				let b=prompt("Введите своё ФИО", " ");
-				if(a!="Секретарь"&&a!="секретарь"){
+				if(a==="Начальник"||a==="Зам.Начальника"){
 					alert("Здраствуйте, господин начальник")
 				}
 				else{
@@ -47,5 +59,7 @@
 		<input type="button" id="btn1" value="Запуск первого скрипта" onclick="src1()">
 		<br>
 		<input type="button" id="btn2" value="Запуск второго скрипта" onclick="src2()">	
+		<br>
+		<input type="button" id="btn3" value="Запуск третьего скрипта" onclick="src3()">	
 	</body>
 </html>
